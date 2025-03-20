@@ -27,8 +27,8 @@ let backgrounds = [
 //function for generating quotes
 
 async function generateQuotes() {
-  //   quoteContainer.innerHTML = `Loading quotes....<i class="fa-solid fa-sync fa-spin"></i> `;
-  //   generateQuoteBtn.innerText = "Generating...";
+  quoteContainer.innerHTML = `Loading quotes....<i class="fa-solid fa-sync fa-spin"></i> `;
+  generateQuoteBtn.innerText = "Generating...";
   //For making fetch api call url and options are created
   const url = "https://api.freeapi.app/api/v1/public/quotes/quote/random";
   const options = { method: "GET", headers: { accept: "application/json" } };
